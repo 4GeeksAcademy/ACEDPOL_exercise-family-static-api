@@ -43,14 +43,16 @@ class FamilyStructure:
 
     def add_member(self, member):
         # añade al nuevo miembro
-        return self._members.append(member)
+        self._members.append(member)
+        return member
 
 
     def delete_member(self, id):
         # busca el miembro con el id y lo elimina
         for member in self._members:
             if member["id"] == id:
-                return self._members.remove(member)
+                self._members.remove(member)
+                return member
         pass # si no lo encuentra
 
 

@@ -67,7 +67,7 @@ def handle_delete_single_member(id):
     # retornar jsonify -> correcto
     return jsonify({
         "done": True,
-        "msg": "Familiar añadido",
+        "msg": "Familiar eliminado",
         "member": single_member
     }), 200
 
